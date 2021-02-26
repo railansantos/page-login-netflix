@@ -1,0 +1,113 @@
+:root{
+/*cria variáveis de cor para serem usadas*/
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ELEMENTOS BASE*/
+
+body{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/background-netflix.jpg'); /*carrega imagem como background || O linear gradiente adciona uma fina camada de cor para ressaltar as letras*/   
+    width: 100%;
+    height: 400px;
+    background-color: var(--preto);
+    font-family: 'Arial';
+    color: white;
+}
+
+ header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor:pointer; /*muda o ponteiro do mouse para uma mãozinha ao passar por cima do botao*/
+    transition: .3s ease all;
+}
+
+header .botao{
+    background-color: var(--vermelho);
+    color: white;
+    border-radius: 3px solid black;
+    font-family: 'Arial', Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 10px 15px;
+    cursor:pointer; /*muda o ponteiro do mouse para uma mãozinha ao passar por cima do botao*/
+    transition: .3s ease all;
+}
+
+.tela-principal .container .subtitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 40px;}
+
+.descricao1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.descricao2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+
+.inscricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px;
+    margin-bottom: 1px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px; 
+    margin-top: 0;
+    border: 1px;
+    color: white;
+}
+
+.botao-inscricao{
+   
+    background-color: var(--vermelho);
+    color: white;
+    border: 1px solid black;
+    padding: 15px;
+    
+    cursor:pointer; /*muda o ponteiro do mouse para uma mãozinha ao passar por cima do botao*/
+    transition: .3s ease all;
+}
+
+.botao:hover, .botao-inscricao:hover{
+    background-color: black;
+    color: white;
+}
